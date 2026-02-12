@@ -1,2 +1,2 @@
 
-git coomit -m"Deleted SQL.txt"
+
