@@ -1,6 +1,7 @@
 
 
-https://github.com/user-attachments/assets/3c8320f8-957f-4a50-b54e-d21c9265631e
+<img width="1920" height="981" alt="Screenshot 2026-06-12 150747" src="https://github.com/user-attachments/assets/9b1ad7c1-df82-4172-8ffb-cc803c220e40" />
+
 
 # 🛍️ Customer Shopping Behaviour Analysis
 
