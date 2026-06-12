@@ -4,92 +4,112 @@ https://github.com/user-attachments/assets/3c8320f8-957f-4a50-b54e-d21c9265631e
 
 # 🛍️ Customer Shopping Behaviour Analysis
 
-> Exploring what customers buy, how they spend, and what drives their decisions — through Python-based data analysis and visual storytelling.
+> An end-to-end analytics project — from raw data through Python EDA, SQL querying, and an interactive Power BI dashboard — built to surface actionable insights from retail customer transactions.
 
 ---
 
-## 💡 What This Project Is About
-
-Retail businesses sit on mountains of transaction data but rarely extract clear answers from it. This project takes a structured, visual approach to understanding customer shopping behaviour — uncovering patterns across demographics, product categories, and spending habits that can directly inform business strategy.
-
----
-
-## 🔧 Tools & Libraries
+## 🔧 Tools & Technologies
 
 | Tool | Role |
 |---|---|
-| Python | Core analysis language |
-| Pandas | Data cleaning and manipulation |
-| NumPy | Numerical operations |
-| Matplotlib | Custom visualizations |
-| Seaborn | Statistical plots and heatmaps |
-| Jupyter Notebook | Interactive analysis environment |
+| Python (Pandas, NumPy) | Data cleaning and exploratory analysis |
+| Matplotlib & Seaborn | Statistical visualizations |
+| SQL | Business question analysis |
+| Power BI Desktop | Interactive dashboard |
+| Jupyter Notebook | Analysis environment |
+| Git & GitHub | Version control |
+
+---
+
+## 🚀 End-to-End Pipeline
+
+```
+Raw CSV → Python EDA (Jupyter) → SQL Analysis → Power BI Dashboard
+```
 
 ---
 
 ## 📦 About the Dataset
 
-The dataset captures retail transaction records across a diverse customer base.
-
-**Key fields include:**
+Retail transaction records across a diverse customer base, including:
 
 | Field | Description |
 |---|---|
 | Customer ID | Unique identifier per shopper |
 | Age & Gender | Demographic profile |
 | Product Category | Type of item purchased |
-| Purchase Amount | Value of the transaction |
+| Purchase Amount | Transaction value |
 | Payment Method | How the customer paid |
-| Purchase Date | When the transaction occurred |
+| Subscription Status | Whether the customer is subscribed |
 | Rating | Customer satisfaction score |
 
 ---
 
-## 🔎 Analysis Breakdown
+## 🐍 Python Analysis (Jupyter Notebook)
 
-### 🧹 Step 1 — Data Cleaning
-- Identified and resolved missing values
-- Removed duplicates and corrected data type inconsistencies
-- Standardised categorical fields for reliable grouping
+### Data Cleaning
+- Resolved missing values and removed duplicates
+- Standardised categorical fields (gender, subscription status, shipping types)
+- Corrected data types for reliable aggregation
 
-### 📊 Step 2 — Exploratory Data Analysis (EDA)
+### Exploratory Data Analysis (EDA)
+- Spending distribution across age groups and gender
+- Product category performance by revenue and volume
+- Payment method preferences by demographic segment
+- Subscription vs non-subscription spending comparison
+- Correlation analysis across key variables
 
-Dug into the data across multiple angles:
-
-- **Demographics** — age and gender distribution across the customer base
-- **Spending patterns** — average spend, purchase frequency, high-value transactions
-- **Category performance** — which product types drive the most revenue
-- **Payment behaviour** — preferred payment methods by segment
-- **Trend analysis** — how shopping activity shifts over time
-
-### 📈 Step 3 — Visualizations
-
-Built a range of charts to communicate findings clearly:
-
+### Visualizations Built
 - Bar and column charts for category and demographic comparisons
 - Histograms for spend distribution
-- Pie charts for market share by category
-- Heatmaps for correlation between variables
-
-### 💼 Step 4 — Business Insights
-
-Translated findings into practical recommendations around customer targeting, product prioritisation, and retention strategy.
+- Pie charts for category and subscription share
+- Heatmaps for variable correlation
 
 ---
 
-## 🏆 Key Findings
+## 🔍 SQL Analysis
 
-- A handful of product categories generate the bulk of total revenue
-- Age and gender are strong predictors of both category preference and spend level
-- Repeat customers account for a disproportionately large share of overall sales
-- Payment method preferences vary significantly across age groups
-- Seasonal patterns create predictable spikes in shopping activity
+Business questions answered through SQL queries:
+
+| # | Question |
+|---|---|
+| 1 | Total revenue breakdown by gender |
+| 2 | High-spending customers who used discounts |
+| 3 | Top products by average review rating |
+| 4 | Spending comparison across shipping types |
+| 5 | Subscribed vs non-subscribed customer behaviour |
+| 6 | Products with highest discount usage |
+| 7 | Revenue contribution by age group |
 
 ---
 
-## 📷 Visualizations
+## 📊 Power BI Dashboard
 
-> *(Add your chart screenshots here)*
+### KPI Cards
+- Total number of customers — **77**
+- Average purchase amount — **$59.90**
+- Average review rating — **3.74**
+
+### Visualizations
+- Donut chart — subscription status breakdown
+- Bar charts — revenue and sales by product category
+- Horizontal bar charts — revenue and sales by age group
+
+### Interactive Slicers
+- Subscription Status
+- Gender
+- Category
+- Shipping Type
+
+---
+
+## 💡 Key Findings
+
+- A small number of categories drive a disproportionate share of total revenue
+- Subscribed customers show higher average spend and purchase frequency
+- Age and gender are strong predictors of category preference and spend level
+- Customers using discounts still complete high-value transactions
+- Repeat customers account for the majority of overall sales
 
 ---
 
@@ -98,17 +118,12 @@ Translated findings into practical recommendations around customer targeting, pr
 ```
 Customer-Shopping-Behaviour-Analysis/
 │
-├── data/
-│   └── shopping_data.csv
-│
-├── notebooks/
-│   └── analysis.ipynb
-│
-├── images/
-│   └── visualizations.png
-│
+├── customer_shopping_behavior.csv
+├── customer_shopping_behavior_Analysis.ipynb
+├── Customer_bhevaior_SQL_script.sql
+├── Customer_behavior_dashboard.pbix
 ├── README.md
-└── requirements.txt
+└── .gitignore
 ```
 
 ---
@@ -117,28 +132,32 @@ Customer-Shopping-Behaviour-Analysis/
 
 **Clone the repo**
 ```bash
-git clone https://github.com/your-username/Customer-Shopping-Behaviour-Analysis.git
+git clone https://github.com/Ptirunagari19/Customer-Shopping-Behaviour-Analysis.git
 cd Customer-Shopping-Behaviour-Analysis
 ```
 
-**Install dependencies**
+**Install Python dependencies**
 ```bash
-pip install -r requirements.txt
+pip install pandas numpy matplotlib seaborn jupyter
 ```
 
-**Open the notebook**
+**Run the notebook**
 ```bash
-jupyter notebook
+jupyter notebook customer_shopping_behavior_Analysis.ipynb
 ```
+
+**Open the dashboard**
+
+Open `Customer_behavior_dashboard.pbix` in Power BI Desktop.
 
 ---
 
 ## 🔭 What's Next
 
-- Connect findings to a **Power BI dashboard** for interactive exploration
-- Apply **clustering algorithms** (K-Means) for customer segmentation
-- Build a **purchase prediction model** using classification techniques
-- Package the analysis into a shareable **web application**
+- Connect Power BI directly to a SQL database for live data refresh
+- Apply K-Means clustering for customer segmentation
+- Build a purchase prediction model using classification techniques
+- Automate the pipeline using Azure Data Factory
 
 ---
 
