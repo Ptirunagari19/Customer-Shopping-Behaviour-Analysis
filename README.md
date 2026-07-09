@@ -166,7 +166,8 @@ Open `Customer_behavior_dashboard.pbix` in Power BI Desktop.
 
 Open to feedback and collaboration. Fork the repo and raise a pull request with any improvements.
 
-👨‍💻 Author
-Pranusha Tirunagari
-Data Engineer | Azure | Databricks | PySpark | Power BI
+## 👩‍💻 Author
+
+**Pranusha Tirunagari**  
+Data Engineer | Azure | Databricks | PySpark | Power BI  
 📍 [LinkedIn](https://www.linkedin.com/in/pranusha-tirunagari-a583a63a8/) | [GitHub](https://github.com/Ptirunagari19)
